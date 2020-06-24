@@ -60,7 +60,7 @@ if __name__ == '__main__':
 
 **Run it**
 ```
-env SINGLEARITY_API_SERVER=https://beta3.singlearity.com SINGLEARITY_API_KEY=<API_KEY> python pa_pred_simple.py 
+env SINGLEARITY_API_SERVER=https://www.singlearity.com SINGLEARITY_API_KEY=<API_KEY> python pa_pred_simple.py 
 ```
 **Results**
 ```
@@ -71,5 +71,4 @@ env SINGLEARITY_API_SERVER=https://beta3.singlearity.com SINGLEARITY_API_KEY=<AP
 1   Joc Pederson  Chris Paddack  0.043248  0.340692  0.220657  0.695325  0.301649
 4      Gavin Lux  Chris Paddack  0.032899  0.356026  0.206187  0.617087  0.269010
 ```
-
 

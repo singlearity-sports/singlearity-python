@@ -17,7 +17,7 @@ pd.options.display.max_rows = 999
 sing.hello_with_key()
 
 def show_example():
-    batter_list = ['Mookie Betts', 'Justin Turner', 'Joc Pederson', 'Corey Seager', 'Gavin Lux']
+    batter_list = ['Mookie Betts']
     pitcher_list  = ['Chris Paddack']
 
     candidate_batters = [sing.get_players(name = player_name)[0] for player_name in batter_list]
@@ -29,7 +29,6 @@ def show_example():
         atmosphere = atmosph, state=State()) for m in candidate_batters for p in candidate_pitchers])
     results = pd.DataFrame(sing.get_pa_sim(matchups))
     print(f'\nResults')
-    results = results[['batter_name', 'pitcher_name', 'hr_exp', 'so_exp', 'ba_exp', 'ops_exp',  'woba_exp']]
     print(results.sort_values(by=["woba_exp"], ascending = False))
     
 if __name__ == '__main__':
