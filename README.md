@@ -21,9 +21,13 @@ You will need to obtain an API key by sending an email request to keys@singleari
 ## Example Usage
 
 **Create it**
+
 Copy common.py to a local directory.
+
 ```pip import pandas```
+
 Create a file ```pa_pred_very_simple.py``` with:
+
 ```
 ##########################################
 # Simple batter vs. pitcher plate appearance prediction using defaults
