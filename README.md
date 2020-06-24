@@ -11,11 +11,10 @@ Python 3.6+
 
 ## Installation
 
-``` pip install singlearity```
-
 We recommend you create a virtual environment using **venv** or similar as described in the [python.org guide](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/).
 
 You will need to obtain an API key by sending an email request to keys@singlearity.com
+``` pip install singlearity```
 
 
 ## Example Usage
