@@ -22,9 +22,9 @@ Obtain an API key by sending an email request to keys@singlearity.com
 
 **Create it**
 
-Copy ```common.py``` to a local directory.
+Copy ```examples/common.py``` to a local directory.
 
-```pip import pandas```
+```pip install pandas```
 
 Create a file ```pa_pred_very_simple.py``` with:
 
@@ -64,7 +64,7 @@ if __name__ == '__main__':
 
 **Run it**
 ```
-env SINGLEARITY_API_SERVER=https://www.singlearity.com SINGLEARITY_API_KEY=<API_KEY> python pa_pred_simple.py 
+env SINGLEARITY_API_SERVER=https://www.singlearity.com SINGLEARITY_API_KEY=<API_KEY> python pa_pred_very_simple.py 
 ```
 **Results**
 ```
