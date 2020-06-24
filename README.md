@@ -13,7 +13,8 @@ Python 3.6+
 
 We recommend you create a virtual environment using **venv** or similar as described in the [python.org guide](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/).
 
-You will need to obtain an API key by sending an email request to keys@singlearity.com
+Obtain an API key by sending an email request to keys@singlearity.com
+
 ``` pip install singlearity```
 
 
@@ -21,7 +22,7 @@ You will need to obtain an API key by sending an email request to keys@singleari
 
 **Create it**
 
-Copy common.py to a local directory.
+Copy ```common.py``` to a local directory.
 
 ```pip import pandas```
 
