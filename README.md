@@ -64,7 +64,7 @@ if __name__ == '__main__':
 
 **Run it**
 ```
-env SINGLEARITY_API_SERVER=https://www.singlearity.com SINGLEARITY_API_KEY=<API_KEY> python pa_pred_very_simple.py 
+env SINGLEARITY_API_SERVER=https://beta3.singlearity.com SINGLEARITY_API_KEY=<API_KEY> python pa_pred_very_simple.py 
 ```
 **Results**
 ```
