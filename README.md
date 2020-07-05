@@ -13,7 +13,7 @@ Python 3.6+
 
 We recommend you create a virtual environment using **venv** or similar as described in the [python.org guide](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/).
 
-Obtain an API key by sending an email request to keys@singlearity.com
+Obtain a Trial API key through the [Singlearity Contact Form](https://forms.gle/HXzvDNe5HXMi35648)
 
 ``` pip install singlearity```
 
@@ -32,14 +32,12 @@ Create a file ```pa_pred_very_simple.py``` with:
 ##########################################
 # Simple batter vs. pitcher plate appearance prediction using defaults
 ##########################################
-from common import sing
 from pprint import pprint
+import pandas as pd
 
-
+from common import sing
 from singlearity import State, Player, Team, Venue, Atmosphere, Matchup, ApiException
 from singlearity.rest import ApiException
-
-import pandas as pd
 
 def show_example():
     batter_list = ['Mookie Betts', 'Justin Turner', 'Joc Pederson', 'Corey Seager', 'Gavin Lux']
@@ -64,7 +62,7 @@ if __name__ == '__main__':
 
 **Run it**
 ```
-env SINGLEARITY_API_SERVER=https://beta3.singlearity.com SINGLEARITY_API_KEY=<API_KEY> python pa_pred_very_simple.py 
+env SINGLEARITY_API_KEY=<API_KEY> python pa_pred_very_simple.py 
 ```
 **Results**
 ```

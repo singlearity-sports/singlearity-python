@@ -11,8 +11,8 @@ if os.getenv("SINGLEARITY_API_KEY") is None:
     print('You are not using an API key.  You will not be able to use some Singlearity APIs')
 configuration.api_key['SINGLEARITY_API_KEY'] = os.environ.get("SINGLEARITY_API_KEY", "") 
 
-#use environment variable or default to beta3.singlearity.com
-configuration.host = os.environ.get("SINGLEARITY_API_SERVER", "http://beta3-api.singlearity.com")
+#use environment variable or default to api.singlearity.com
+configuration.host = os.environ.get("SINGLEARITY_API_SERVER", "https://api.singlearity.com")
 
 # Enter a context with an instance of the API client
 with singlearity.ApiClient(configuration) as api_client:
