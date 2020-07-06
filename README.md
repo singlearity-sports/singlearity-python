@@ -2,8 +2,12 @@
 # Welcome to Singlearity!
 
 
-Singlearity is a web-based service for baseball analytics.  It uses machine learning to make predictions based on a wide range of historical data.    These predictions can be used to make more effective pre-game and in-game strategy decisions and to provide for more accurate game simulations.
+Singlearity is a web-based service for baseball analytics.  It uses machine learning to make predictions based on a wide range of player and historical data.    These predictions can be used to make more effective pre-game and in-game strategy decisions and to provide for more accurate game simulations.
 
+There are two types of predictions that can be run:
+1) Batter vs. Pitcher predictions (Singlearity-PA).   Each plate appearance prediction is created by first creating a Matchup.  A Matchup consists of a Batter, a Pitcher, the Atmosphere (containing things such as game location and weather), and a State (containing things such as score, inning, and baserunners).  A list of matchups can be submitted to the Singlearity server and it will return predicted outcomes for each matchup.
+
+2) Game simulation predictions (Singlearity-Game).   An game simulation prediction is created by first creating home and away lineups.   The simulation may optionally include a starting state at some intermediate point in the game.  This allows simulating things such as an extra inning game with multiple runners on base, the #5 hitter coming to bat with a tired pitcher on the mound.   Currently, Singlearity-Game only supports simulating to the end of the half-inning.  It is possible to accurately simulate hundreds of games in just a few seconds.
 
 # Requirements
 
