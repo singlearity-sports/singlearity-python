@@ -24,7 +24,7 @@ Python 3.6+
 
 We recommend you create a virtual environment using **venv** or similar as described in the [python.org guide](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/).
 
-Obtain a Trial API key through the [Singlearity Contact Form](https://forms.gle/HXzvDNe5HXMi35648)
+Obtain a Trial API key through the [Singlearity Contact Form](https://forms.gle/Hzeyecqdz7j4tdiMA)
 
 ``` pip install singlearity```
 
