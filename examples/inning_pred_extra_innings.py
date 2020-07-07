@@ -32,7 +32,7 @@ def find_best_reliever(pitchers, sims):
     ]
 
     visit_lineup_positions = [
-        LineupPos(player = sing.get_players(name = 'Mike Yastrzemski')[0], position = 'LF'),
+        LineupPos(player = sing.get_players(name = 'Yastrzemski')[0], position = 'LF'),
         LineupPos(player = sing.get_players(name = 'Buster Posey')[0], position = 'C'),
         LineupPos(player = sing.get_players(name = 'Brandon Belt')[0], position = '1B'),
         LineupPos(player = sing.get_players(name = 'Evan Longoria')[0], position = '3B'),
