@@ -4,7 +4,7 @@
 
 Singlearity is a web-based service for baseball analytics.  It uses machine learning to make predictions based on a wide range of player and historical data.    These predictions can be used to make more effective pre-game and in-game strategy decisions and to provide for more accurate game simulations.
 
-You can view the technical description of Singlearity at [Baseball Prospectus](https://www.baseballprospectus.com)
+You can view the technical description of Singlearity at [Baseball Prospectus](https://www.baseballprospectus.com/news/article/59993/singlearity-using-a-neural-network-to-predict-the-outcome-of-plate-appearances/)
 
 # Description
 
