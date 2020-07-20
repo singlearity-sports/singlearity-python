@@ -33,7 +33,6 @@ def find_best_reliever(pitchers, sims):
 
     visit_lineup_positions = [
         LineupPos(player = sing.get_players(name = 'Yastrzemski')[0], position = 'LF'),
-        LineupPos(player = sing.get_players(name = 'Buster Posey')[0], position = 'C'),
         LineupPos(player = sing.get_players(name = 'Brandon Belt')[0], position = '1B'),
         LineupPos(player = sing.get_players(name = 'Evan Longoria')[0], position = '3B'),
         LineupPos(player = sing.get_players(name = 'Alex Dickerson')[0], position = 'RF'),
@@ -41,6 +40,7 @@ def find_best_reliever(pitchers, sims):
         LineupPos(player = sing.get_players(name = 'Mauricio Dubon')[0], position = '2B'),
         LineupPos(player = sing.get_players(name = 'Wilmer Flores')[0], position = 'DH'),
         LineupPos(player = sing.get_players(name = 'Billy Hamilton')[0], position = 'CF'),
+        LineupPos(player = sing.get_players(name = 'Tyler Heineman')[0], position = 'C'),
         LineupPos(player = sing.get_players(name = 'Johnny Cueto')[0], position = 'P'),
     ]
 
@@ -71,6 +71,6 @@ def find_best_reliever(pitchers, sims):
 
 if __name__ == '__main__':
     test_pitcher_list = ['Tony Watson', 'Shaun Anderson', 'Trevor Gott', 'Jarlin Garcia', 'Wandy Peralta']
-    find_best_reliever(test_pitcher_list, sims = 1000)
+    find_best_reliever(test_pitcher_list, sims = 2000)
     
 

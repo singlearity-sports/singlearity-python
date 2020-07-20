@@ -73,7 +73,7 @@ if __name__ == '__main__':
 
 **Run it**
 ```
-env SINGLEARITY_API_KEY=<API_KEY> python pa_pred_very_simple.py 
+env SINGLEARITY_API_KEY=YOUR_API_KEY python pa_pred_very_simple.py 
 ```
 **Results**
 ```
