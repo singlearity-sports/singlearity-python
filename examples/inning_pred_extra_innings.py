@@ -25,7 +25,7 @@ def find_best_reliever(pitchers, sims):
         LineupPos(player = sing.get_players(name = 'Justin Turner')[0], position = '3B'),
         LineupPos(player = sing.get_players(name = 'Cody Bellinger')[0], position = 'RF'),
         LineupPos(player = sing.get_players(name = 'Corey Seager')[0], position = 'SS'),
-        LineupPos(player = sing.get_players(name = 'A.J. Pollock')[0], position = 'DH'),
+        LineupPos(player = sing.get_players(name = 'Pollock')[0], position = 'DH'),
         LineupPos(player = sing.get_players(name = 'Joc Pederson')[0], position = 'LF'),
         LineupPos(player = sing.get_players(name = 'Will Smith', position = ['C'])[0], position = 'C'),  #for Will Smith add position to distinguish him from other Will Smith's
         LineupPos(player = sing.get_players(name = 'Clayton Kershaw')[0], position = 'P'),
