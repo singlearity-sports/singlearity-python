@@ -20,7 +20,7 @@ sing.hello_with_key()
 def show_example():
     batter = sing.get_players(name="Aaron Judge")[0]
     pitching_team = "Rays"
-    candidate_pitchers = sing.get_players(team_name = pitching_team, position=["P"], active = True)
+    candidate_pitchers = sing.get_players(team_name = pitching_team, position=["P"], active = True, on_40=True)
     atmosph = Atmosphere(sing.get_venues(stadium_name = "Yankee Stadium")[0], temperature = 70,
         home_team = sing.get_teams(name = "Yankees")[0])
     state = State(inning=9, top=False, bat_score=3, fld_score=3, on_1b=True, on_2b=True, on_3b=True, outs=2)
