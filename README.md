@@ -85,3 +85,8 @@ env SINGLEARITY_API_KEY=YOUR_API_KEY python pa_pred_very_simple.py
 4      Gavin Lux  Chris Paddack  0.032899  0.356026  0.206187  0.617087  0.269010
 ```
 
+## Example Visualizations
+It is easy to combine the Singlearity prediction outputs with libraries such as matplotlib to create visualizations which communicate the important information efficiently.  [Here is an example in python](https://github.com/singlearity-sports/singlearity-python/blob/master/examples/inning_pred_extra_innings.py "Here is an example in Python") which combines Singlearity-PA with Singlarity-Game to decide which pitcher to bring in to hold a 1 run lead in extra innings using the 2020 MLB new rules.  Note that with the 2020 rules, a runner starts on 2nd base and there are additional restrictions based on pitcher substitutions.  This example works by simulating the results of 1000 innings played with the given batter coming up, no outs, and a runner already on 2nd base.  This example assumes that the Yankees are trying to hold on to a 1 run lead against the Orioles.
+
+![enter image description here](https://github.com/singlearity-sports/singlearity-python/resources/woba_by_pitch_count.png)
+
