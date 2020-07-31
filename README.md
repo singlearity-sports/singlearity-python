@@ -4,6 +4,8 @@
 
 Singlearity is a web-based service for baseball analytics.  It uses machine learning to make predictions based on a wide range of player and historical data.    These predictions can be used to make more effective pre-game and in-game strategy decisions and to provide for more accurate game simulations.
 
+This repository contains instructions and examples for using Singlearity with Python.    R users should look [here](https://github.com/singlearity-sports/singlearity-R) for instructions and examples. 
+
 You can view the technical description of Singlearity at [Baseball Prospectus](https://www.baseballprospectus.com/news/article/59993/singlearity-using-a-neural-network-to-predict-the-outcome-of-plate-appearances/)
 
 # Description
@@ -86,7 +88,16 @@ env SINGLEARITY_API_KEY=YOUR_API_KEY python pa_pred_very_simple.py
 ```
 
 ## Example Visualizations
-It is easy to combine the Singlearity prediction outputs with libraries such as matplotlib to create visualizations which communicate the important information efficiently.  [Here is an example in python](https://github.com/singlearity-sports/singlearity-python/blob/master/examples/inning_pred_extra_innings.py "Here is an example in Python") which combines Singlearity-PA with Singlarity-Game to decide which pitcher to bring in to hold a 1 run lead in extra innings using the 2020 MLB new rules.  Note that with the 2020 rules, a runner starts on 2nd base and there are additional restrictions based on pitcher substitutions.  This example works by simulating the results of 1000 innings played with the given batter coming up, no outs, and a runner already on 2nd base.  This example assumes that the Yankees are trying to hold on to a 1 run lead against the Orioles.
+It is easy to combine the Singlearity prediction outputs with libraries such as [matplotlib](https://matplotlib.org/) and [seaborn](https://seaborn.pydata.org/) to create visualizations which communicate the important information efficiently. 
 
-![enter image description here](https://github.com/singlearity-sports/singlearity-python/resources/woba_by_pitch_count.png)
+ [Here is an example in python](https://github.com/singlearity-sports/singlearity-python/blob/master/examples/inning_pred_extra_innings.py "Here is an example in Python") which combines Singlearity-PA with Singlarity-Game to help select a relief pitcher during a game.  This example assumes that the Yankees are trying to hold on to a one run lead against the Orioles to start the bottom of the tenth inning.     Note that according to the 2020 MLB rules on extra innings, a runner starts on second base with no outs, and there are additional restrictions  on pitcher substitutions.  Singlearity-Game allows the programmer to create this particular game state, and to then run thousands of game simulations to evaluate the probabilities that each pitcher will be able to hold the lead. 
 
+The visualization below shows the probability of each Yankees pitcher holding the one run lead depending on where in the batting order the Orioles begin their half of the inning.
+
+![enter image description here](https://github.com/singlearity-sports/singlearity-python/blob/master/resources/yankees_os_extra_save_python.png)
+
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE1NjYzNzc2NzksLTE1MjM3NzY0NTZdfQ
+==
+-->
