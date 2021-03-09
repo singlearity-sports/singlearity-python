@@ -5,6 +5,8 @@
 ##########################################
 from common import sing
 from pprint import pprint
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 from singlearity import State, Player, Team, Venue, Atmosphere, Matchup, ApiException
 
@@ -15,7 +17,8 @@ from datetime import datetime
 pd.options.display.max_rows = 999
 pd.options.display.max_columns = 999
 
-def show_predictions(args):
+#fill in the singlearity parameters with the arguments from the command line
+def get_predictions(args):
     batter_list = [sing.get_players(name=b.strip())[0] for b in args.batters.split(',')]
     pitcher_list = [sing.get_players(name=p.strip())[0] for p in args.pitchers.split(',')]
 
@@ -35,8 +38,22 @@ def show_predictions(args):
                          state=state,
                          date = args.date)
                          for m in batter_list for p in pitcher_list]
-    results = pd.DataFrame(sing.get_pa_sim(matchups, model_name=args.predictiontype, return_features=args.showinputs))
-    print(f'\nResults:\n {results}')
+    results = pd.DataFrame(sing.get_pa_sim(matchups, return_features=args.showinputs, model_name=args.predictiontype))
+    return results
+
+
+def plot_results(df, key):
+    if key is None: 
+        return
+    df_pivot = df.pivot(index='batter_name', columns='pitcher_name', values=key)
+    plt.figure(figsize=(20, 20))
+    plt.rcParams.update({'font.size': 15})
+    sns.heatmap(df_pivot, annot=True, fmt='g')
+    plt.title(f'Predictions for {key}', wrap=True)
+    plt.xlabel('Pitcher')
+    plt.ylabel('Batter')
+    plt.yticks(rotation=0)
+    plt.savefig(f'{key}.png')
 
 default_batters = 'Mookie Betts, Cody Bellinger'
 default_pitchers = 'Mike Clevinger, Chris Paddack'
@@ -65,10 +82,10 @@ parser.add_argument('--pitchnumber', type=int,help="pitcher's pitch count at sta
 model_choices = ['ab_outcome', 'ab_woba', 'ab_woba_no_state']
 parser.add_argument('--predictiontype', choices=model_choices, default='ab_outcome', help=f'type of prediction.  Valid options are {model_choices[0]}. Default "ab_outcome"')
 parser.add_argument('--showinputs', action='store_true', help='show the values of the input features that were used to make the prediction.  Default False')
-
+parser.add_argument('--plotresult', default=None, help=f'create a plot of a prediction (e.g. "woba_exp"). Default None')
 
 
 args = parser.parse_args()
-show_predictions(args)
-
-
+results = get_predictions(args)
+print(f"Results:\n{results}") #print the dataframe
+plot_results(results, args.plotresult)
