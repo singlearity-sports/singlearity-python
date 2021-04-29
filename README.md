@@ -1,15 +1,13 @@
 ![enter image description here](http://beta3.singlearity.com/static/assets/Logo-PNG.png)
 # Welcome to Singlearity!
 
-
 Singlearity is a web-based service for baseball analytics.  It uses machine learning to make predictions based on a wide range of player and historical data.    These predictions can be used to make more effective pre-game and in-game strategy decisions and to provide for more accurate game simulations.
 
-This repository contains instructions and examples for using Singlearity with Python.    R users should look [here](https://github.com/singlearity-sports/singlearity-R) for instructions and examples. 
+This work was presented at the 2021 SABR Conference and the 2021 Sloan Sports Analytics Conference.   You can view the [technical paper](https://www.singlearity.com/static/assets/sloan-singlearity.pdf) or the [Powerpoint presentation](https://www.singlearity.com/static/assets/Singlearity-sabr.pptx).
+
+You can also view an earlier article about Singlearity that appeared on [Baseball Prospectus](https://www.baseballprospectus.com/news/article/59993/singlearity-using-a-neural-network-to-predict-the-outcome-of-plate-appearances/).
 
 
-This work was presented at the [2021 SABR Conference](https://sabr.org/analytics/presentations) and the [2021 Sloan Sports Analytics Conference](https://www.sloansportsconference.com/).
-
-You can view the technical description of Singlearity at [Baseball Prospectus](https://www.baseballprospectus.com/news/article/59993/singlearity-using-a-neural-network-to-predict-the-outcome-of-plate-appearances/).
 
 # Description
 
