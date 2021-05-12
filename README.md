@@ -11,7 +11,7 @@ You can also view an earlier article about Singlearity that appeared on [Basebal
 
 # Description
 
-This repository contains sample Python code for making programmatic calls to the Singlearity web service hosted at api.singlearity.com.
+This repository contains sample Python code for making programmatic calls to the Singlearity web service hosted at api.singlearity.com.  If you prefer to use a [Jupyter Notebook](https://www.dataquest.io/blog/jupyter-notebook-tutorial/) to view and experiment with capabilities of the Singlearity service, you can access a Singlearity Notebook [here](https://github.com/singlearity-sports/singlearity-python/blob/master/singlearity.ipynb).
 
 There are two closely related types of predictions that can be obtained:
 
